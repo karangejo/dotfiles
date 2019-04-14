@@ -103,3 +103,5 @@ watchman
 .yo-rc-global.json
 .zynaddsubfx-bank-cache.xml
 .zynaddsubfxXML.cfg
+.gitignore
+
