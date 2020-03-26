@@ -8,11 +8,11 @@ Plug 'https://github.com/mattn/emmet-vim.git'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim' 
 Plug 'https://github.com/vim-airline/vim-airline.git'
-Plug 'tidalcycles/vim-tidal'
+" Plug 'tidalcycles/vim-tidal'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes.git'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'tomlion/vim-solidity'
+" Plug 'tomlion/vim-solidity'
 Plug 'https://github.com/vim-syntastic/syntastic.git'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/Valloric/YouCompleteMe.git'
@@ -76,13 +76,13 @@ let g:syntastic_check_on_open = 1
 
 
 " autoclose brackets
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
+" inoremap " ""<left>
+" inoremap ' ''<left>
+" inoremap ( ()<left>
+" inoremap [ []<left>
+" inoremap { {}<left>
+" inoremap {<CR> {<CR>}<ESC>O
+" inoremap {;<CR> {<CR>};<ESC>O
 
 " remap window navigations
 nnoremap <C-J> <C-W><C-J>
