@@ -1,5 +1,11 @@
+" install vim-plugin
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
 " install plugins wihth :PlugInstall
 " using vim-plugin
+"
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/tpope/vim-sensible'
