@@ -1,0 +1,8 @@
+#!/bin/sh
+
+tmux new-session \; \
+        send-keys 'vim .' C-m \; \
+        new-window \; \
+        send-keys 'htop' C-m \; \
+        split-window -h \; \
+        send-keys 'ls -alh' C-m \; 
