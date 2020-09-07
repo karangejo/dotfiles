@@ -4,5 +4,5 @@ tmux new-session \; \
         send-keys 'vim .' C-m \; \
         new-window \; \
         send-keys 'htop' C-m \; \
-        split-window -h \; \
+        split-window -v \; \
         send-keys 'ls -alh' C-m \; 
