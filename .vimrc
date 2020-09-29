@@ -23,8 +23,14 @@ Plug 'https://github.com/vim-syntastic/syntastic.git'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/Valloric/YouCompleteMe.git'
 Plug 'https://github.com/tpope/vim-repeat.git'
-" post install (yarn install | npm install)
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'Chiel92/vim-autoformat'
+Plug 'elmcast/elm-vim'
+Plug 'elixir-editors/vim-elixir'
+
 
 call plug#end()
 
@@ -96,3 +102,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" emmet redefine leader key
+"let g:user_emmet_leader_key=','
+
+" nerdtree shows hidden files by default
+let g:NERDTreeShowHidden=1 
+
+" no open window for youcompleteme
+set completeopt-=preview   
